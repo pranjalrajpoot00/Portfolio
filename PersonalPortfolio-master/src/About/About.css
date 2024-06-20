@@ -1,0 +1,253 @@
+@font-face {
+  font-family: Ogg;
+  src: url(../Assets/fonts/Ogg-Regular.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(../Assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: KGHappy;
+  src: url(../Assets/fonts/KGHappy.ttf);
+}
+@font-face {
+  font-family: Franchise;
+  src: url(../Assets/fonts/Franchise.ttf);
+}
+
+.about {
+  overflow-x: hidden;
+}
+#tondak {
+  margin-left: 22vw;
+  color: transparent;
+  -webkit-text-stroke: 5px #c91919;
+}
+
+.container-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 8vw;
+  margin-top: -8vw;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13vw;
+  font-family: KGHappy;
+  font-weight: lighter;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: -7px;
+  line-height: 13vw;
+}
+.container-inner-text2 {
+  margin-top: -24vw;
+  font-style: italic;
+}
+
+.container-quote {
+  position: absolute;
+  top: 44vw;
+  right: 7%;
+  font-family: Ogg;
+  font-size: 1.1vw;
+  font-weight: 900;
+  color: #e9dbd4;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.container-image {
+  position: absolute;
+  top: 65vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  background: url(../Assets/profile.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  filter: grayscale(1);
+  height: 80vw;
+  z-index: -1;
+}
+.container-quote2 {
+  position: absolute;
+  top: 110vw;
+  left: 7%;
+}
+
+.about-container2 {
+  position: absolute;
+  top: 130vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vw;
+  width: 100%;
+  flex-direction: column;
+}
+.about-container2-heading {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+.about-container2-heading p {
+  font-size: 15vw;
+  font-family: Franchise;
+  line-height: 10%;
+  font-weight: lighter;
+}
+.about-text-lower-1 p {
+  line-height: 100%;
+  margin-top: 0vh;
+}
+.about-container2-p p {
+  font-size: 1.5vw;
+  font-family: Inter;
+  margin-bottom: 80px;
+  padding: 0 30px;
+  color: black;
+  letter-spacing: 2px;
+  word-spacing: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.about-container2-p-right {
+  text-align: right;
+}
+
+.about-container-flower {
+  position: absolute;
+  top: 25vw;
+  left: 10vw;
+  animation: animate-rotate 10s infinite linear;
+}
+.about-container-flower img {
+  width: 13vw;
+}
+.about-footer {
+  margin-top: 270vw;
+}
+
+@keyframes animate-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 950px) {
+  .about-footer {
+    margin-top: 290vw;
+  }
+}
+@media (max-width: 768px) {
+  .container-text {
+    padding: 0 8vw;
+    margin-top: -2vw;
+    font-size: 15vw;
+    line-height: 15vw;
+  }
+  #tondak {
+    margin-left: 17vw;
+  }
+  .container-quote {
+    top: 64vw;
+    right: 5%;
+    font-size: 1.5vw;
+    text-shadow: 1px 1px black;
+  }
+  .container-quote2 {
+    top: 100vw;
+    left: 7%;
+  }
+  .container-image {
+    top: 72vw;
+    width: 55vw;
+    height: 83vw;
+  }
+  .about-container2 {
+    top: 140vw;
+    height: 70vw;
+  }
+  .about-container2-heading p {
+    font-size: 17vw;
+  }
+  .about-container-flower {
+    top: 29vw;
+    left: 7vw;
+  }
+  .about-container-flower img {
+    width: 14vw;
+  }
+  .about-container2-p p {
+    font-size: 1.8vw;
+    margin-bottom: 60px;
+  }
+  .about-footer {
+    margin-top: 320vw;
+  }
+}
+@media (max-width: 640px) {
+  .about-footer {
+    margin-top: 340vw;
+  }
+}
+@media (max-width: 500px) {
+  .about-footer {
+    margin-top: 360vw;
+  }
+}
+@media (max-width: 425px) {
+  .container-text {
+    padding: 0 3vw;
+    margin-top: 7vw;
+    font-size: 19vw;
+    line-height: 19vw;
+  }
+  .container-inner-text2 {
+    margin-top: -30vw;
+  }
+  #tondak {
+    margin-left: 10vw;
+  }
+  .container-quote {
+    top: 100vw;
+    font-size: 1.8vw;
+    font-weight: 900;
+  }
+  .container-quote2 {
+    top: 175vw;
+  }
+  .container-image {
+    top: 140vw;
+    width: 75vw;
+    height: 125vw;
+  }
+  .about-container2 {
+    top: 240vw;
+  }
+  .about-container2-heading p {
+    font-size: 18vw;
+  }
+  .about-container-flower {
+    top: 30.5vw;
+    left: 4vw;
+  }
+  .about-container-flower img {
+    width: 15vw;
+  }
+  .about-container2-p p {
+    font-size: 2.5vw;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    line-height: 150%;
+    word-spacing: 8px;
+  }
+  .about-footer {
+    margin-top: 480vw;
+  }
+}
